@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Making Connections</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="navMain">
+            <div class="logo">
+                <h1>Profile</h1>
+            </div>
+                <p class="link"><a href="#">Home</a></p>
+                <p class="link"><a href="#">My Profile</a></p>
+                <p class="link"><a href="#">Find Connections</a></p>
+                <input type="button" class="button" value="Sign Out"/>
+        </div>
+    </nav>
+    <main>
+        <div class="col1">
+            <div class="row1">
+                <div class="userCardHeader">
+                    <div class="userPic">
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <h1 class="userName">Jane Doe</h1>
+                    <div class="location">
+                        <img src="img/map-marker.png" alt="0" class="pip">
+                        <h3>Seattle, WA</h3>
+                    </div>
+                    <div class="description">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="editProf">
+                        <img src="img/gear.png" alt="0" class="gear" onclick="changeName()">
+                        <p onclick="changeName()">edit profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="sidebox">
+                    <div class="sidebarHeader">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="sidebarContent">
+                        <div class="sidebox">
+                            <div class="eduItems">
+                                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                                    <h4>Dec 2019 - Mar 2020</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusantium ipsum fugit tempora molestiae tenetur necessitatibus modi laborum et. Repellendus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarContent">
+                        <div class="sidebox">
+                            <div class="eduItems">
+                                    <h3>Another Item - Item Description Here</h3>
+                                    <h4>August 2010 - May 2016</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, amet temporibus. Repudiandae maxime pariatur exercitationem iusto qui ab asperiores debitis. Impedit modi eligendi quisquam eaque!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="row3">
+                <div class="sidebox">
+                    <div class="sidebarHeader">
+                        <div class="numReqs"><h2 id="numReqs">2</h2></div>
+                        <h2>Friend Requests</h2>
+                    </div>
+                    <div class="sidebarContent">
+                        <div class="sidebox">
+                            <div id="toddProf" class="otherUsers">
+                                    <div class="profPic" id="todd"></div>
+                                    <h3>Todd E</h3>
+                                    <img class="acceptButton" src="img/accept-circle.png" alt="button" onclick="removeReq(0);addFriend()">
+                                    <img class="acceptButton" src="img/close-circle.png" alt="button" onclick="removeReq(0)">
+                            </div>
+                            <div id="philProf" class="otherUsers">
+                                    <div class="profPic" id="phil"></div>
+                                    <h3>Phil K</h3>
+                                    <img class="acceptButton" src="img/accept-circle.png" alt="button" onclick="removeReq(1);addFriend()">
+                                    <img class="acceptButton" src="img/close-circle.png" alt="button" onclick="removeReq(1)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="sidebox">
+                    <div class="sidebarHeader">
+                        <div class="friendsHeader"><h2 id="numFriends">500</h2></div>
+                        <h2>Friends</h2>
+                    </div>
+                    <div class="sidebarContent">
+                        <div class="sidebox">
+                            <div class="otherUsers">
+                                    <div class="profPic" id="adrien"></div>
+                                    <h3>Adrien D</h3>
+                                </div>
+                                <div class="acceptButtonContainer">
+                            </div>
+                            <div class="otherUsers">
+                                    <div class="profPic" id="anne"></div>
+                                    <h3>Annne J</h3>
+                                </div>
+                                <div class="acceptButtonContainer">
+                            </div>
+                            <div class="otherUsers">
+                                    <div class="profPic" id="alayne"></div>
+                                    <h3>Alayne T</h3>
+                                <div class="acceptButtonContainer">
+                                </div>
+                            </div>
+                            <div class="otherUsers">
+                                    <div class="profPic" id="arry"></div>
+                                    <h3>Arry Y</h3>
+                                <div class="acceptButtonContainer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebarFooter">
+                        <div>
+                            <h3><a href="#">View More</a></h3>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
